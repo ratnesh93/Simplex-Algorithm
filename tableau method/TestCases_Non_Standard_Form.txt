@@ -26,3 +26,67 @@ Ans: Max value is: 33
 			x1 , x2 >= 0
 
 Ans: Max value is: 10
+
+4. 	Max: 	Z= 4x1 + 2x2 - 3x3
+	s.t:  	3x1 + 2x2 + 5x3 <= 55
+			2x1 + x2 + x3 <= 26
+			x1 + x2 + 3x3 <= 30
+			5x1 + 2x2 + 4x3 <= 57
+			x1 , x2 , x3 >= 0
+
+Ans: Max value is: 52
+
+5. 	Max: 	Z= x1 + 2x2
+	s.t:  	x1 + x2 <= 10
+			3x1 + x2 <= 20
+			x1 , x2 >= 0
+
+Ans: Max value is: 20
+
+6. 	Max: 	Z= 7x1 + 6x2
+	s.t:  	3x1 + x2 <= 120
+			x1 + 2x2 <= 160
+			x1 <= 35
+			x1 , x2 >= 0
+
+Ans: Max value is: 544
+
+7. 	Max: 	Z= 1000x1 + 1200x2
+	s.t:  	10x1 + 5x2 <= 200
+			2x1 + 3x2 <= 60
+			x1  <= 34
+			x2 <= 14
+			x1 , x2 >= 0
+
+Ans: Max value is: 27000
+
+8. 	Max: 	Z= 40x1 + 30x2
+	s.t:  	x1 + x2 <= 16
+			x1 + x2 <= 9
+			3x1 + 2x2 <= 24
+			x1 , x2 >= 0
+
+Ans: Max value is: 330
+
+9. 	Max: 	Z= 2x1 - x2
+	s.t:  	x1 - x2 <= 1
+			2x1 + x2 <= 6
+			x1 , x2 >= 0
+
+Ans: Max value is: 3.33
+
+10. Max: 	Z= 4x1 + 2x2 + 3x3
+	s.t:  	3x1 + 2x2 + 5x3 <= 55
+			2x1 + x2 + x3 <= 26
+			x1 + x2 + 3x3 <= 30
+			5x1 + 2x2 + 4x3 <= 57
+			x1 , x2 , x3 >= 0
+
+Ans: Max value is: 53.6
+
+11. Max: 	Z= x1 + x2
+	s.t:  	x1 - x2 <= 10
+			x1  <= 5
+			x1 , x2 >= 0
+
+Ans: The system of equation is unbounded
