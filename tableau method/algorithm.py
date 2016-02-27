@@ -107,7 +107,7 @@ print M
 if(check ==0):
 	print "\n",
 	print "Max value is: ", 
-	print M[0][len(M[0])-1],
+	print round(M[0][len(M[0])-1],2),
 	print "\n"
 else:
 	print "The problem is unbounded"
