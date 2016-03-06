@@ -16,7 +16,8 @@ sm
 '''
 import os
 #give the input index of file name, i.e input file name is input+inputIndex where inputIndex is an integer
-inputIndex=1
+inputIndex=7
+OutputVar=[]
 
 def divide(A,k):
 	for j in range(len(A)):
@@ -73,6 +74,7 @@ def tableau(M,rowIndex,colIndex):
 M=[]
 #getting input
 f = open(os.getcwd()+'/input'+str(inputIndex)+'.txt', 'r')
+OutputVar.append("z")
 for line in f:
         C=[]
         line=line.split(",")
@@ -80,6 +82,12 @@ for line in f:
         	C.append(float(word))
         M.append(C)
 f.close()
+j=1
+for k in range(len(M)-1):
+	OutputVar.append("s"+str(j))
+	j=j+1
+
+nonSlack = len(M[0])-len(M)
 
 i=0
 #check for checking unboundness 
@@ -89,6 +97,8 @@ while(1):
 	if(M[0][i] < 0):
 		colIn = colIndex(M)
 		rowIn = rowIndex(M,colIn)
+		if(colIn < nonSlack):
+			OutputVar[rowIn]="x"+str(colIn+1)
 		if(rowIn == -1):
 			check = 1
 			break
@@ -102,8 +112,13 @@ while(1):
 
 #printing resultant tableau
 
+ans=[]
 print "\n",
-print M
+#print M
+for m in range(len(M)):
+	ans.append(M[m][len(M[0])-1])
+print OutputVar
+print ans
 if(check ==0):
 	print "\n",
 	print "Max value is: ", 
